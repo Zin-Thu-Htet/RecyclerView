@@ -14,16 +14,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var flowerList = ArrayList<Flower>()
-        flowerList.add(Flower("Daisy",32.0,R.drawable.photoimg))
-        flowerList.add(Flower("Rose",32.0,R.drawable.photoimgheart))
-
-        var flowerAdapter = FlowerAdapter(flowerList)
-        flowerRecycler.layoutManager = LinearLayoutManager(this)
-        //flowerRecycler.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
-
-        //flowerRecycler.layoutManager = GridLayoutManager(this,2)
-
-        flowerRecycler.adapter = flowerAdapter
     }
 }
